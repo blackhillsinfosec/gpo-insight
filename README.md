@@ -6,7 +6,11 @@ The following is an example of the command used to create the GPO Export.
 ```powershell
 Get-GPOReport -All -Domain "domain.com" -Server "ACME-DC1" -ReportType HTML -Path "C:\GPOReport.html"
 ```
-  
+## Usage
+Execute parsing and analysis functionality on the file `GPOReport.html`.
+```
+gpo-insight -i GPOReport.html
+```  
 Specify GPO Exports using the `-i` (input) flag. No default value exists for this flag.  
 Once the GPO Export is imported to GPO-Insight, the GPOs will be broken down into individual files that reflect each individual GPO.  
 Outputs from GPO-Insight will be generated in the directory specified by the `-o` (output) flag, or will default to the Present Working Directory.  
