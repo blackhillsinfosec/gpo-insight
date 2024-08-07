@@ -234,6 +234,9 @@ Additionally, all valid lines of GPO Query Syntax can use "//" to end the line w
 This is a comment, as well.
 Links::Domain Controllers | Policy::Domain controller: LDAP server signing requirements::None // This is a comment after a valid query
 ```  
+## Missing Features
+Missing features that are intended to be added in future versions.  
+- [ ] Policy Parsing for Registries  
 
 ## Acknowledgements
 Thanks to the team at Black Hills Information Security (BHIS) that have contributed to this tool by sharing their knowledge and insights of Active Directory.  
