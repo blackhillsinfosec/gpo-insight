@@ -1,5 +1,7 @@
 # GPO Insight
 
+<img src="gpo-insight.png" alt="GPO Insight" width="200"/>
+
 GPO Insight accepts GPO Exports created using the Get-GPOReport CMDLET in Active Directory.  
 The following is an example of the command used to create the GPO Export.  
   
