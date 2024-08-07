@@ -1,0 +1,7 @@
+// Encrypt Secure Channels
+D -- policy::Domain member: Digitally encrypt or sign secure channel data (always)::Enabled
+U -- policy::Domain member: Digitally encrypt or sign secure channel data (always)::!Enabled
+M -- policy::<Domain member: Digitally encrypt or sign secure channel data::
+
+D -- policy::Microsoft network server: Digitally sign communications (always)::Enabled
+U -- policy::Microsoft network server: Digitally sign communications (always)::!Enabled

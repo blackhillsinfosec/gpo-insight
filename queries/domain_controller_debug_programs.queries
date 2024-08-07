@@ -1,0 +1,15 @@
+// Only Domain Admins or Enterprise Admins should be able to Debug on a Domain Controller
+// The following query won't work in this version of gpo-insight. Slated for future release.
+// U -- Links::Domain Controllers | Policy::Debug programs::>!Administrators | Policy::Debug programs::>!Admins | Policy::Debug programs::>!Service | Policy::Debug programs::>!System
+
+// Caution should be exercised when giving debug permissions
+// The following query won't work in this version of gpo-insight. Slated for future release.
+// W -- !Link::Domain Controllers | Policy::Debug programs::>!Administrators | Policy::Debug programs::>!Admins | Policy::Debug programs::>!Service | Policy::Debug programs::>!System
+
+// Queries for now until future features.
+U -- Policy::Debug programs::>Users
+U -- Policy::Debug programs::>Everybody
+U -- Policy::Debug programs::>Users
+U -- Policy::Debug programs::>Everybody
+U -- Policy::Debug programs::>Users
+U -- Policy::Debug programs::>Everybody

@@ -1,0 +1,3 @@
+// Within most environments, authenticated users shouldn't be able to add machines to the domain.
+W -- Policy::Add workstations to domain::>Users
+W -- Policy::Add workstations to domain::Everybody

@@ -1,0 +1,4 @@
+// LDAP signing should be required.
+U -- Links::Domain Controllers | Policy::Domain controller: LDAP server signing requirements::!Require signature
+D -- Links::Domain Controllers | Policy::Domain controller: LDAP server signing requirements::Require signature
+M -- Links::Domain Controllers | Policy::Domain controller: LDAP server signing requirements::

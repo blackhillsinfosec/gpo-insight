@@ -1,0 +1,6 @@
+// By default this value is set as disabled on servers and clients.
+// https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/accounts-guest-account-status
+U -- Policy::Accounts: Guest account status::!Disabled
+// Users should require a password to logon to the domain.
+D -- Policy::Accounts: Guest account status::Disabled
+// Don't warn on missing values. This is a hardening GPO and might not be suitable for everyone.

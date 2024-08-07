@@ -1,0 +1,7 @@
+// Local Computer accounts should not have have permissions to modify GPOs
+U -- Delegation::>$::<Edit::
+U -- Delegation::>$::<Delete::
+U -- Delegation::>$::<Modify::
+U -- Delegation::>Computers::<Edit::
+U -- Delegation::>Computers::<Delete::
+U -- Delegation::>Computers::<Modify::

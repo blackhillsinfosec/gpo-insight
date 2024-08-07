@@ -1,0 +1,4 @@
+// This configuration reduces the attack surface for NTLM Relay Attacks
+// https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-security-restrict-ntlm-outgoing-ntlm-traffic-to-remote-servers
+D -- Policy::Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers::Deny All
+W -- Policy::Network security: Restrict NTLM: Outgoing NTLM traffic to remote servers::!Deny All

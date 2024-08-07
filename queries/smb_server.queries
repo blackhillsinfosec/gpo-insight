@@ -1,0 +1,5 @@
+// By default this value is set as disabled on servers.
+U -- Policy::Microsoft network client: Send unencrypted password to connect to third-party SMB servers::Enabled
+// This GPO value would be to enforce these settings and prevent modification.
+D -- Policy::Microsoft network client: Send unencrypted password to connect to third-party SMB servers::Disabled
+// Don't warn on missing values. This is a hardening GPO and might not be suitable for everyone.

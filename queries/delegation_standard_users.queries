@@ -1,0 +1,7 @@
+// If Standard Users have permissions to modify GPOs
+U -- Delegation::>Users::<Edit::
+U -- Delegation::>Users::<Delete::
+U -- Delegation::>Users::<Modify::
+U -- Delegation::Everybody::<Edit::
+U -- Delegation::Everybody::<Delete::
+U -- Delegation::Everybody::<Modify::

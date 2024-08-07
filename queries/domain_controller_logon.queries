@@ -1,0 +1,13 @@
+// Only Domain Admins or Enterprise Admins should be able to log onto the domain controller
+// The following queries won't work in the current version of gpo-insight.
+// U -- Links::Domain Controllers | Policy::Allow log on locally::!>Administrators | Policy::Allow log on locally::!>Admins | Policy::Allow log on locally::!>Print Operators | Policy::Allow log on locally::!>Server Operators | Policy::Allow log on locally::!>Backup Operators | Policy::Allow log on locally::!>Account Operators
+// U -- Links::Domain Controllers | Policy::Allow log on through Terminal Services::!>Administrators | Policy::Allow log on through Terminal Services::!>Admins | Policy::Allow log on through Terminal Services::!>Print Operators | Policy::Allow log on through Terminal Services::!>Server Operators | Policy::Allow log on through Terminal Services::!>Backup Operators | Policy::Allow log on through Terminal Services::!>Account Operators
+// U -- Links::Domain Controllers | Policy::Allow log on through Remote Desktop Services::!>Administrators | Policy::Allow log on through Remote Desktop Services::!>Admins | Policy::Allow log on through Remote Desktop Services::!>Print Operators | Policy::Allow log on through Remote Desktop Services::!>Server Operators | Policy::Allow log on through Remote Desktop Services::!>Backup Operators | Policy::Allow log on through Remote Desktop Services::!>Account Operators
+
+// Temporary queries until future features.
+U -- Links::Domain Controllers | Policy::Allow log on locally::>Users
+U -- Links::Domain Controllers | Policy::Allow log on locally::>Everybody
+U -- Links::Domain Controllers | Policy::Allow log on through Terminal Services::>Users
+U -- Links::Domain Controllers | Policy::Allow log on through Terminal Services::>Everybody
+U -- Links::Domain Controllers | Policy::Allow log on through Remote Desktop Services::>Users
+U -- Links::Domain Controllers | Policy::Allow log on through Remote Desktop Services::>Everybody

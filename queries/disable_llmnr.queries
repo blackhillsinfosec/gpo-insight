@@ -1,0 +1,5 @@
+// LLMNR should always be disabled to prevent LLMNR Responder-like attacks
+// https://github.com/lgandx/Responder
+U -- Policy::Turn off multicast name resolution::!Enabled
+D -- Policy::Turn off multicast name resolution::Enabled
+M -- Policy::Turn off multicast name resolution::

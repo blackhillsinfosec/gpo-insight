@@ -1,0 +1,13 @@
+// By default this value is set as disabled on servers.
+// https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-access-do-not-allow-anonymous-enumeration-of-sam-accounts
+W -- Policy::Network access: Do not allow anonymous enumeration of SAM accounts::Disabled
+// This GPO value would be to enforce these settings and prevent modification.
+D -- Policy::Network access: Do not allow anonymous enumeration of SAM accounts::Enabled
+// Don't warn on missing values. This is a hardening GPO and might not be suitable for everyone.
+
+// By default this value is set as disabled on servers.
+// https://learn.microsoft.com/en-us/previous-versions/windows/it-pro/windows-10/security/threat-protection/security-policy-settings/network-access-do-not-allow-anonymous-enumeration-of-sam-accounts-and-shares
+W -- Policy::Network access: Do not allow anonymous enumeration of SAM accounts and shares::Disabled
+// This GPO value would be to enforce these settings and prevent modification.
+D -- Policy::Network access: Do not allow anonymous enumeration of SAM accounts and shares::Enabled
+// Don't warn on missing values. This is a hardening GPO and might not be suitable for everyone.

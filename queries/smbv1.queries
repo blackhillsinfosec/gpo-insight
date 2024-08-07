@@ -1,0 +1,12 @@
+// Disable SMBv1
+// It is best to have SMBv1 disabled via GPO.
+D -- policy::Configure SMB v1 server::Disabled
+D -- policy::Configure SMB v1 client driver::<Disable driver
+
+// If SMBv1 is not disabled, but these policy values exist, they are likely enabled.
+U -- policy::Configure SMB v1 server::!Disabled
+U -- policy::Configure SMB v1 client driver::!<Disable driver
+
+// If these GPO policies don't exist, investigate if DCs use SMBv1.
+M -- policy::Configure SMB v1 server::
+M -- policy::Configure SMB v1 client driver::

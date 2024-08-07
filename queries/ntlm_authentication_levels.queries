@@ -1,0 +1,14 @@
+// Mark as Desirable if LAN Manager authentication level is 5.
+D -- Policy::Network security: LAN Manager authentication level::<Send NTLMv2 response | Policy::Network security: LAN Manager authentication level::>Refuse LM & NTLM
+
+// Trigger if the LAN Manager authentication level isn't 4 or 5. 
+U -- Policy::Network security: LAN Manager authentication level::!Send NTLMv2 responses only. Refuse LM & NTLM | Policy::Network security: LAN Manager authentication level::!Send NTLMv2 responses only. Refuse LM | Policy::Network security: LAN Manager authentication level::!Send NTLMv2 response only. Refuse LM & NTLM | Policy::Network security: LAN Manager authentication level::!Send NTLMv2 response only. Refuse LM
+
+// Warn if the LAN Manager authentication level is 4.
+W -- Policy::Network security: LAN Manager authentication level::Send NTLMv2 responses only. Refuse LM
+W -- Policy::Network security: LAN Manager authentication level::Send NTLMv2 response only. Refuse LM
+
+// LAN Manager authentication level should be set SOMEWHERE
+// Undesirables will trigger if this isn't set to a desirable value.
+// This will trigger as missing if NO policy exists for LAN Manager authentication level.
+M -- Policy::Network security: LAN Manager authentication level::
